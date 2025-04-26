@@ -12,8 +12,8 @@
 // // Check for Content Script context
 // console.log("\nContent Script Environment:");
 // const isContentScript = (
-//   typeof chrome !== 'undefined' && 
-//   typeof chrome.runtime !== 'undefined' && 
+//   typeof chrome !== 'undefined' &&
+//   typeof chrome.runtime !== 'undefined' &&
 //   typeof chrome.runtime.onMessage !== 'undefined'
 // );
 // console.log("Appears to be in a content script context:", isContentScript);
@@ -21,7 +21,7 @@
 // // Check for Manifest V3 specific features
 // console.log("\nManifest V3 Support:");
 // const hasServiceWorkerAPI = (
-//   typeof chrome !== 'undefined' && 
+//   typeof chrome !== 'undefined' &&
 //   typeof chrome.scripting !== 'undefined'
 // );
 // console.log("chrome.scripting API (Manifest V3):", hasServiceWorkerAPI);
@@ -64,4 +64,4 @@
 //   console.log("Messaging API unavailable (chrome.runtime not found)");
 // }
 
-// console.log("\n=== Diagnostic Complete ==="); 
+// console.log("\n=== Diagnostic Complete ===");
